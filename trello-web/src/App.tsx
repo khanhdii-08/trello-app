@@ -1,9 +1,9 @@
-import ModeSelect from './components/ModeSelect'
+import AppBar from '~/components/AppBar'
 
 function App() {
   return (
     <>
-      <ModeSelect />
+      <AppBar />
     </>
   )
 }
