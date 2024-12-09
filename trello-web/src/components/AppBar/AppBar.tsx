@@ -9,6 +9,7 @@ import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 import Badge from '@mui/material/Badge'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
+import LibraryAddIcon from '@mui/icons-material/LibraryAdd'
 import Tooltip from '@mui/material/Tooltip'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import Profiles from './Profiles'
@@ -16,10 +17,10 @@ import Profiles from './Profiles'
 const AppBar = () => {
   return (
     <Box
-      px={2}
       sx={{
         width: '100%',
         height: '58px',
+        paddingX: 2,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -40,7 +41,9 @@ const AppBar = () => {
           <Recent />
           <Starred />
           <Templates />
-          <Button variant="outlined">Create</Button>
+          <Button variant="outlined" startIcon={<LibraryAddIcon />}>
+            Create
+          </Button>
         </Box>
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
